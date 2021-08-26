@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/2112d3c255.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- <link rel="stylesheet" href="Class7_ApneasBoot.css"> -->
+
+<style>
+    body{
+text-align: center;
+font-family: 'Lato', sans-serif;
+
+}
+
+
+/* NAV BAR */
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1B2F38;
+    color: silver;
+}
+
+.navbar-light .navbar-brand {
+    color: silver;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #1B2F38;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: silver;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: silver
+}
+
+/* UNO */
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#titulo1{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#titulo2{
+    font-size: 14px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#userinput{
+    display: inline-block;
+    padding: 7px 10px 11px 20px ;
+}
+
+.btn-danger{
+    padding: 10px 30px 10px 30px ; 
+    
+}
+
+#uno{
+    text-align: center;
+    background-color: #eefcfa;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+/* CARD */
+#dos{
+    background-color: #B5E6DF;
+    border: none;
+}
+
+.col-sm-3 {
+    display: table-cell;
+}
+
+.card{
+    border: none;
+    background-color: #B5E6DF;
+}
+
+.card-text{
+    width: 100%; 
+    font-size: 12px;
+}
+
+/* FONT FAMILY */
+.oswald{
+    font-family: 'Oswald', sans-serif;
+}
+
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #1d1e2c;
+    padding: 15px 15px 15px 15px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.footerinfo{
+    text-decoration: none;
+    color: snow;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #1d1e2c;
+}
+
+#copyright{
+    color: hsl(0, 12%, 83%);
+    margin-top: 20px;
+}
+
+</style>
+    <title>Final Project</title>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-#1B2F38">
+          <div class="container-fluid">
+            <a class="navbar-brand active" href="finalProject_1PersonalResume.html">Landing Page</a>
+            <button class="navbar-toggler active" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="Class8_1AboutMe.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Class8_2SkillsExp.html">Skills & Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Class8_3ContactMe.html">Contact Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="finalProject_2Apneas.html">Apneas.org</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Class9_1Pokemon.html">Pokemon</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Class11_dice.html">Dice Game</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Class13_tictactoe.html">Tic Tac Toe Game</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </div>
+<!-- LOGO LANDING -->
+<div class="uno" style="background-color: #EEFCFA">
+    <br>
+      <div class="container">
+        <img id="logo" src="http://www.apneas.org/ARRENDAR_MONITOR_APNEA_files/Logo%20apneas.png" alt="Apneas.org" height="140px" width="250px">
+
+        <h1 id="titulo1">MONITORES DE APNEAS <br> PROFESIONALES PARA BEBÉS</h1>
+
+        <br>
+            
+        <h3 id="titulo2">Arriendo Y Venta de Monitores De Apnea Profesionales Cardiorespiratorios Y Cardiorespiratorios Con Saturación</h3>
+
+        <br>
+        <form>
+            <input id="userinput" type="text" value="Ingrese Email">
+            <button type="button" class="btn btn-danger">Enviar</button>
+        </form> 
+        <br>
+      </div>
+</div>
+
+    <!-- DOS -->
+<div class="dos" style="background-color: #b5e6df;">
+    <br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="icon rounded mx-auto d-block" src="https://images.vexels.com/media/users/3/151787/isolated/lists/fee75de3b20d60b9c69ee7fb6ac9f24f-icono-de-monitor-de-frecuencia-cardiaca.png" alt="icon" height="100px" width="100px">
+                    <div class="card-body">
+                      <h5 class="card-title">Monitores</h5>
+                      <p class="card-text">Entregamos en comodato un monitor que graba apneas, bradicardias y taquicardias. Nuestro médico experto en apneas infantiles las evalúa, emitiendo un reporte comprensivo y descartando falsas alarmas.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="icon rounded mx-auto d-block" src="https://images.vexels.com/media/users/3/151981/isolated/preview/f8863741dba8034b3e1d4809a01c782a-estetoscopio-icono-medico-iconos.png" alt="icon" height="100px" width="100px">
+                    <div class="card-body">
+                      <h5 class="card-title">Reporte Medico</h5>
+                      <p class="card-text">El reporte médico (poligrafía extendida) permite al médico tratante un mejor seguimiento del bebé y suspender su uso cuando ya no tenga más apneas. El monitor permite grabar períodos largos de tiempo (vea aquí ejemplos)</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="icon rounded mx-auto d-block" src="https://images.vexels.com/media/users/3/151875/isolated/preview/f2d5248930c7bd3729cf9475832a93bd-icono-de-lupa-medica-iconos-medicos.png" alt="icon" height="100" width="100px">
+                    <div class="card-body">
+                      <h5 class="card-title">Descarga Remota</h5>
+                      <p class="card-text">Ofrecemos opcionalmente descarga a distancia de la memoria del monitor en todo Chile. Se requiere PC y conexión a Internet.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img class="icon rounded mx-auto d-block" src="https://images.vexels.com/media/users/3/151711/isolated/lists/cc1ace3bc46703da9e85a7947629224b-icono-de-opinion-del-medico.png" alt="Vacations" height="100" width="100">
+                    <div class="card-body">
+                      <h5 class="card-title">Horarios</h5>
+                      <p class="card-text">Instalamos monitores todos los días de 9-12 hrs (de acuerdo a disponibilidad). Ofrecemos soporte de lunes a viernes desde 9 a 13 hrs.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    
+    </div>
+
+</div>
+<!-- TRES -->
+
+<div class="tres">
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img id="doctor" src="https://buddhabellybirth.com/wp-content/uploads/2017/07/Finding-a-Pediatrician-1024x538.jpg" alt="Apneas.org" height="450px" width="990px "class="d-block w-100 ">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Facil y Seguro<h5>
+              <p>Estamos atendiendo todos los días en este crítico período y ofrecemos, opcionalmente, descarga vía Telemedicina.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://www.myhspediatrics.com/wp-content/uploads/2020/01/Holly-Springs_Choosing-a-Pediatrician-1024x536.jpeg" class="d-block w-100"  height="450px" width="990px" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sistema Remoto</h5>
+              <p>El informe medico puede ser entregado en al comodidad de tu hogar.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.dificonsa.com/wp-content/uploads/2017/07/shutterstock_528854752-1014x487.jpg" class="d-block w-100" alt="..."height="450px" width="990px"> 
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Equipo Experto</h5>
+              <p>Somos expertos en el rubro..</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+<!-- Color Palete -->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1" style="background-color: #1D1E2C; color:honeydew" >1D1E2C</div>
+        <div class="col-md-1" style="background-color: #1B2F38; color:honeydew" >1B2F38</div>
+        <div class="col-md-1" style="background-color: #194044;color:honeydew" >194044</div>
+        <div class="col-md-1" style="background-color: #14615C;" >14615C</div>
+        <div class="col-md-1" style="background-color: #0AA38C;" >0AA38C</div>
+        <div class="col-md-1" style="background-color: #43BAA8;" >43BAA8</div>
+        <div class="col-md-1" style="background-color: #7CD0C3;" >7CD0C3</div>
+        <div class="col-md-1" style="background-color: #B5E6DF;" >B5E6DF</div>
+        <div class="col-md-1" style="background-color: #D2F1ED;" >D2F1ED</div>
+        <div class="col-md-1" style="background-color: #EEFCFA;" >EEFCFA</div>
+
+
+    </div>
+
+</div>
+
+<!-- Font Family -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 oswald" style="background-color: #43BAA8;">Oswald</div>
+        <div class="col-md-6 lato" style="background-color: #7CD0C3;">Lato</div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="container-fluid footer">
+<div class="footer">
+    <a href="https://www.facebook.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/1024px-Facebook_icon_2013.svg.png" height="15px" width="15px"></a>
+    <a class="footerinfo" href="https://www.facebook.com">Facebook</a>
+    <a href="https://www.instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" height="15px" width="15px"></a>
+    <a class="footerinfo" href="https://www.instagram.com">Instagram</a>
+
+    <p id="copyright">&copy; Apneas.org 2021</p>
+
+</div >
+</div>
+
+
+    
+
+    <!-- Java Script enable -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

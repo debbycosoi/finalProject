@@ -1,0 +1,86 @@
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.dice {
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+}
+
+body {
+    background-color: #E76F51;
+    margin: 0;
+}
+
+h1 {
+    margin: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #264653;
+    text-align: center;
+}
+
+p {
+    font-size: 2rem;
+    color: #264653;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.bottom {
+    padding-top: 30px;
+}
+
+.butn {
+    background: #E9C46A;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 7px;
+    color: #ffff;
+    font-size: 30px;
+    padding: 16px 25px 16px 25px;
+    text-decoration: none;
+}
+
+.butn:hover {
+    background: #E9C46A;
+    text-decoration: none;
+}
+
+/* NAV BAR */
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1B2F38;
+    color: silver;
+}
+
+.navbar-light .navbar-brand {
+    color: silver;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #1B2F38;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: silver;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: silver
+}
