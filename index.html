@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/2112d3c255.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- <link rel="stylesheet" href="Class8_PersonalPage.css"> -->
+<style>
+    /* CARDS */
+
+.card{
+    border: none;
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px;
+}
+
+.card1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.mifoto{
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.card-title{
+    font-size: 20px;
+}
+
+/* TIMELINE */
+
+body{margin-top:20px;}
+.timeline {
+    border-left: 3px solid #727cf5;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(114, 124, 245, 0.09);
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 40%;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+}
+
+.timeline h1 {
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.timeline h2,
+.timeline h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.timeline .event {
+    border-bottom: 1px dashed #e8ebf1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .timeline .event {
+        padding-top: 30px;
+    }
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:before {
+        left: 0px;
+        text-align: left;
+    }
+}
+
+.timeline .event:after {
+    -webkit-box-shadow: 0 0 0 3px #727cf5;
+    box-shadow: 0 0 0 3px #727cf5;
+    left: -55.8px;
+    background: #fff;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:after {
+        left: -31.8px;
+    }
+}
+
+.rtl .timeline {
+    border-left: 0;
+    text-align: right;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: 3px solid #727cf5;
+}
+
+.rtl .timeline .event::before {
+    left: 0;
+    right: -170px;
+}
+
+.rtl .timeline .event::after {
+    left: 0;
+    right: -55.8px;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1B2F38;
+    color: silver;
+}
+
+.navbar-light .navbar-brand {
+    color: silver;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #1B2F38;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(142, 139, 139);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: silver
+}
+
+/* Skills */
+
+.titulo{
+    color: honeydew
+}
+
+.experience{
+    color: honeydew
+}
+
+.fotoex{
+    border-radius: 50%;
+}
+</style>
+    <title>Mariel Cosoi</title>
+</head>
+<body>
+  <div class="container-fluid" style=" background-image: url('https://www.enjpg.com/img/2020/chromebook-8.jpg');
+  background-repeat: no-repeat;   
+  background-attachment: fixed;
+  background-size: cover;">
+    <!-- NAV BAR -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-#1B2F38">
+        <div class="container-fluid">
+          <a class="navbar-brand active" href="">Landing Page</a>
+          <button class="navbar-toggler active" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Class8_1AboutMe.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Class8_2SkillsExp.html">Skills & Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Class8_3ContactMe.html">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="finalProject_2Apneas.html">Apneas.org</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Class9_1Pokemon.html">Pokemon</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Class11_dice.html">Dice Game</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Class13_tictactoe.html">Tic Tac Toe Game</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </div>
+
+
+  <!-- CARD -->
+  <!-- <div class="container-fluid">
+    <div class="row"> -->
+      <!-- <div class="col-md-3" style="float:left"> -->
+
+  <center>
+    <br>
+    <br>
+    <h2 style="color:#eff1ed">Mariel Cosoi</h2>
+    <p style="color:#eff1ed"> Economic & Finance Degree <br> Pontificia Universidad Catolica, Chile</p>
+    <img style="border-radius: 50%;" src="dcr.png" alt="Card image cap" height="200px" width="200px">
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+  </center>
+</div>
+
+      <!-- EDUCATION -->
+      <!-- <div class="col-md-9"> -->
+        <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="card">
+                      <div class="card-body">
+                          <h6 class="card-title" style="text-align: center;">EDUCATION</h6>
+                          <div id="content">
+                              <ul class="timeline">
+                                  <li class="event" data-date="2021 - 2022">
+                                      <h3>Code Immersives</h3>
+                                      <p>Computer Science <br>New York, USA</p>
+                                  </li>
+                                  <li class="event" data-date="2019">
+                                      <h3>Northwestern University</h3>
+                                      <p>Kellogg School of Management, Intensive course in Finance <br> Chicago, USA</p>
+                                  </li>
+                                  <li class="event" data-date="2015-2017">
+                                      <h3>Universidad Adolfo Ibáñez</h3>
+                                      <p>Curso Análisis de Estados FInancieros<br> Curso en Tasación Inmobiliaria, Desarrollo inmobiliario<br>Santiago, Chile </p>
+                                  </li>
+                                  <li class="event" data-date="2009-2014">
+                                      <h3>Pontificia Universidad Católica de Chile</h3>
+                                      <p>Economic & Finance Degree (Ingeniería Comercial)<br> Grade: (5,54/7,0) <br>University’s atletism Team, Javelin<br> Santiago, Chile</p>
+                                  </li>
+                                  <li class="event" data-date="1994-2008">
+                                    <h3>The Grange School</h3>
+                                    <p>Grade: (6,8/7,0) <br> Prefect<br>Student Council <br> Captain of the Volleyball A Team <br>Hockey A Team<br> Atletism A Team<br>Santiago, Chile</p>
+                                </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <!-- Java Script enable -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
